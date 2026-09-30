@@ -14,6 +14,10 @@ public class ClassStart3 {
         student2.age = 16;
         student2.grade = 80;
 
+        Student[] students = new Student[2];
+        students[0] = student1;
+        students[1] = student2;
+
         System.out.println(student1);
         System.out.println(student2);
 
