@@ -1,4 +1,4 @@
-package poly.ex;
+package poly.ex.solution_chapter5_9;
 
 public interface Stack {
     int length();

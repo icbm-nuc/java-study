@@ -1,6 +1,6 @@
-package poly.ex;
+package poly.ex.solution_chapter5_9;
 
-public class StringStack implements Stack{
+public class StringStack implements Stack {
     private String[] data;
     private int length;
     private int capacity;

@@ -1,5 +1,5 @@
 
-package poly.ex;
+package poly.ex.solution_chapter5_9;
 
 import java.util.Scanner;
 
