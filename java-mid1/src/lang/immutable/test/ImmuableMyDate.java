@@ -14,15 +14,15 @@ public class ImmuableMyDate {
         this.day = day;
     }
 
-    public ImmuableMyDate setYear(int value){
+    public ImmuableMyDate withYear(int value){
         return new ImmuableMyDate(value,this.month,this.day);
     }
 
-    public ImmuableMyDate setMonth(int value){
+    public ImmuableMyDate withMonth(int value){
         return new ImmuableMyDate(this.year,value,this.day);
     }
 
-    public ImmuableMyDate setDay(int value){
+    public ImmuableMyDate withDay(int value){
         return new ImmuableMyDate(this.year,this.month,value);
     }
 
