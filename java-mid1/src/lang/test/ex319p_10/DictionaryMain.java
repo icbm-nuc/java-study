@@ -1,4 +1,4 @@
-package lang.test.ex319_10p;
+package lang.test.ex319p_10;
 
 public class DictionaryMain {
 
