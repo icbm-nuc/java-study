@@ -9,7 +9,6 @@ public class Service {
     public void callCatch(){
         try {
             client.call();
-
             //MyCheckedException 은 Exception 의 자식
         } catch (MyCheckedException e) {
             System.out.println("예외 처리, message=" + e.getMessage());
