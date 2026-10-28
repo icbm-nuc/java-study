@@ -6,7 +6,8 @@ public class MainV2 {
 
     static void main(String[] args) {
         //NetworkServiceV2_1 networkService = new NetworkServiceV2_1();
-        NetworkServiceV2_2 networkService = new NetworkServiceV2_2();
+        //NetworkServiceV2_2 networkService = new NetworkServiceV2_2();
+        NetworkServiceV2_4 networkService = new NetworkServiceV2_4();
 
         Scanner scanner = new Scanner(System.in);
 
