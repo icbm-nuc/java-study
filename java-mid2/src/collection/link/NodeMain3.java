@@ -38,7 +38,7 @@ public class NodeMain3 {
         lastNode.next = new Node(param);
     }
 
-    private static Node getNode(Node node, int index) {
+    public static Node getNode(Node node, int index) {
         Node x = node;
         for (int i = 0; i < index; i++) {
             x = x.next;
