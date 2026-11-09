@@ -6,6 +6,7 @@ public class StackMain {
 
     static void main(String[] args) {
         //스택은 사용 x vector 사용해서 느림
+        //스택 필요할시 스택사용하면됨
         Stack<Integer> stack = new Stack<>();
 
         stack.push(1);
