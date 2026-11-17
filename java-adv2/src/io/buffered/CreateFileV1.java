@@ -12,6 +12,7 @@ public class CreateFileV1 {
         FileOutputStream fos = new FileOutputStream(FILE_NAME);
         long startTime = System.currentTimeMillis();
 
+        int bufferIndex = 0;
         for (int i = 0; i < FILE_SIZE; i++) {
             fos.write(1);
         }
