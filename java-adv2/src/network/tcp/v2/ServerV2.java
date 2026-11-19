@@ -30,7 +30,6 @@ public class ServerV2 {
             if (received.equals("exit")) {
                 break;
             }
-
             //클라이언트에게 문자 보내기
             String toSend = received + " World!";
             output.writeUTF(toSend);
