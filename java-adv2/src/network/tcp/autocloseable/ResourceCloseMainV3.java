@@ -23,23 +23,31 @@ public class ResourceCloseMainV3 {
             resource1 = new ResourceV1("resource1"); //
             resource2 = new ResourceV1("resource2");
 
-            resource1.call();
+            resource1.callEx();
             resource2.callEx(); // CallException
         } catch (CallException e) {
             System.out.println("ex: " + e);
             throw e;
         } finally {
             if (resource2 != null) {
-                resource2.closeEx(); // CloseException 발생
+                try {
+                    resource2.closeEx(); // CloseException 발생
+                } catch (CloseException e) {
+                    // close()에서 발생한 예외는 버린다. 필요하면 로깅 정도
+                    System.out.println("close ex: " + e);
+                }
             }
             if (resource1 != null) {
-                resource1.closeEx();
+                try {
+                    resource1.closeEx();
+                } catch (CallException e) {
+                    System.out.println("close ex: " + e);
+                }
             }
 
         }
 /**
- * close() 시점에 실수로 예외를 던지면, 이후 다른 자원을 닫을 수 없는 문제 발생
- * finally 블럭 안에서 자원을 닫을 때 예외가 발생하면, 핵심 예외가 finally에서 발생한 ㅇ부가 예외로 바뀌어버림
+ *
  */
 
     }
