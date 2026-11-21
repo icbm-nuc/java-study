@@ -20,7 +20,7 @@ public class ResourceCloseMainV3 {
         ResourceV1 resource2 = null;
 
         try {
-            resource1 = new ResourceV1("resource1"); //
+            resource1 = new ResourceV1("resource1");
             resource2 = new ResourceV1("resource2");
 
             resource1.callEx();
